@@ -3956,6 +3956,11 @@ input, select, textarea {
   .image-logo{
 	  height: 5rem;
 	  width: auto;
+	  position: absolute;
+
+	  
+	  
+	  
   }
   
 	@media screen and (max-width: 980px) {
@@ -3997,4 +4002,10 @@ input, select, textarea {
 .interesse_produto {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.logo_intro{
+	position: relative;
+	bottom: 2rem;
+
 }
