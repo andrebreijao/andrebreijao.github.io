@@ -3870,6 +3870,7 @@ input, select, textarea {
 	#intro {
 		background-attachment: fixed;
 		background-image: url("images/intro.svg");
+		/* background-image: url('images/caucasian-man-working-shoot.jpg') */
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -3903,8 +3904,25 @@ input, select, textarea {
 
 		}
 
+		#intro img {
+			display: block;
+		}
+
+			@media screen and (max-width: 980px) {
+
+				#intro img {
+					width: 10em;
+				}
+
+			}
+
+
+
+
+
 #logo {
 	position: absolute;
+	display: flex;
 	left: 0.5em;
 	top: 0.5em;
 	margin: auto;
@@ -3915,9 +3933,7 @@ input, select, textarea {
 
 .valores {
 	color: #C0A831;
-	font-size: 1.2em!important;
-	
-	
+	font-size: 1.2em!important;	
 }
 
 .container {
@@ -3926,14 +3942,59 @@ input, select, textarea {
 	font-size: 1.1em!important;
 	font-weight: bolder;
   }
+
   .container.space-around {
 	justify-content: space-around;
+	
+
   }
+
   .container.space-between {  
 	justify-content: space-between;
   }
 
   .image-logo{
-	  height: 3.5em;
+	  height: 5rem;
+	  width: auto;
   }
+  
+	@media screen and (max-width: 980px) {
 
+		.image-logo{
+			height: 3rem;
+			width: auto;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.image-logo{
+			height: 2rem;
+			width: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			
+			
+			
+		}
+
+		.container.space-around {
+			justify-content: space-around;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap:15px ;
+			
+		
+		  }
+
+
+
+
+	}
+
+.interesse_produto {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
