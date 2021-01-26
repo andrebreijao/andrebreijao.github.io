@@ -4002,4 +4002,13 @@ input, select, textarea {
 .logo_intro{
 	position: relative;
 	bottom: 2.5rem;
+	margin: auto;
+}
+
+.introducao{
+	text-align: center;
+}
+
+.introducao> h1{
+	margin-bottom: 0em;
 }
