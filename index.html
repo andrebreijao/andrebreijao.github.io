@@ -34,8 +34,9 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							
-							<img class="logo_intro" src="images/Logo-Rialgraf-Cromia-Efeito-MEDIUM-250x170.png" alt="">
+							<div id="particles-js"></div>
+							<div class="filtro-particulas">
+								<img class="logo_intro" src="images/Logo-Rialgraf-Cromia-Efeito-MEDIUM-250x170.png" alt="">
 								<div class="introducao">
 									<h1>Rialgraf Indústria Gráfica</h1>
 									<p>Soluções em Flexografia e Offset.</p>
@@ -45,6 +46,7 @@
 									<br>
 								<br>
 								</div>
+							</div>
 							<!-- <div class="container space-around"> 
 								<div>Compromisso</div> <div>&#9670;</div>  <div>Velocidade</div>  <div>&#9670;</div>  <div>Qualidade</div>  <div>&#9670;</div>  <div>Sustentabilidade</div>
 							</div>       -->
@@ -180,7 +182,7 @@
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Nome</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" required/>
 											</div>
 
 											<div class="field half">
@@ -190,7 +192,7 @@
 
 											<div class="field half">
 												<label for="telefone">Telefone</label>
-												<input type="text" name="telefone" id="telefone" />
+												<input type="text" name="telefone" id="telefone" required/>
 											</div>
 
 											<div class="field half">
@@ -326,6 +328,9 @@
 			</footer> -->
 
 		<!-- Scripts -->
+			<script src="assets/js/particles.js"></script>
+			<script src="assets/js/app.js"></script>
+		
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
